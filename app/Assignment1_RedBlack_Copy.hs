@@ -124,8 +124,10 @@ isBST tree = isJust $ inorderMax tree Nothing where
 -- Check the Black-balancing condition:
 -- all paths have the same number of black nodes
 
-blackBalanced :: RBT a -> Bool
-blackBalanced LeafRB = True
+-- blackBalanced :: RBT a -> Bool
+-- blackBalanced LeafRB = True
+-- blackBalanced (NodeRB color left x right)
+
 
 
 -- Black height of a black-balanced tree, -1 if not black-balanced
